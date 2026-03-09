@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import {Routes, Route} from 'react-router';
 import Home from './pages/Home';
+import Students from './pages/Students';
 import Navigation from './components/Navigation';
 
 function App() {
@@ -13,10 +14,10 @@ function App() {
       <div>
         <div>
           <Routes>
-            <Route path='/' element={<Home />}>Home</Route>
+            <Route path='/Home' element={<Home />}>Home</Route>
+            <Route path='/Students' element={<Students />}>Students</Route>
           </Routes>
         </div>
-        <Home />
       </div>
     </>
   )
